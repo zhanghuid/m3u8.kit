@@ -1,0 +1,2 @@
+browsermob-proxy==0.8.0
+selenium==3.9.0
