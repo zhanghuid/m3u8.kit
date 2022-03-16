@@ -29,7 +29,9 @@ def get_m3u8(url):
     options.add_argument("--disable-gpu")
 
     # enable proxy
-    server = Server("tools/browserup-proxy-1.1.0/bin/browserup-proxy")
+    server = Server(
+        "tools/browserup-proxy-1.1.0/bin/browserup-proxy", {"port": 8060})
+        # "tools/browserup-proxy-1.1.0/bin/browserup-proxy")
     server.start()
     # proxy = server.create_proxy(
     #     {'captureHeaders': True, 'captureContent': True, 'captureBinaryContent': True})
@@ -40,7 +42,7 @@ def get_m3u8(url):
 
     # init browser
     driver = webdriver.Firefox(
-        firefox_options=options, firefox_profile=profile)
+        options=options, firefox_profile=profile)
 
     # dump har
     proxy.new_har(url)
