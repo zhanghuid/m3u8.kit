@@ -3,7 +3,6 @@
 
 from bottle import route, run, error, response, hook, request
 from util import *
-from dump_har import get_m3u8
 
 _allow_origin = '*'
 _allow_methods = 'PUT, GET, POST, DELETE, OPTIONS'
@@ -18,7 +17,7 @@ def enable_cors():
     response.headers['Access-Control-Allow-Headers'] = _allow_headers\
 
 
-@route('/m3u8')
+@route('/')
 def m3u8():
     url = request.query.url
     if not url:
