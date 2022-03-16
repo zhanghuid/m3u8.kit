@@ -30,7 +30,7 @@ def get_m3u8(url):
 
     # enable proxy
     server = Server(
-        "tools/browserup-proxy-1.1.0/bin/browserup-proxy", {"port": 8060})
+        "tools/browserup-proxy-1.2.1/bin/browserup-proxy", {"port": 8060})
         # "tools/browserup-proxy-1.1.0/bin/browserup-proxy")
     server.start()
     # proxy = server.create_proxy(
