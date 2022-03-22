@@ -127,5 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
 .vscode
+.server.log
+geckodriver.log
+
