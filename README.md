@@ -9,14 +9,18 @@
 ❯ chromedriver --version
 ChromeDriver 99.0.4844.51
 ```
+>[下载地址-npmmirror](https://registry.npmmirror.com/binary.html?path=chromedriver/)<br/>
+>[下载地址-google](http://chromedriver.storage.googleapis.com/index.html)
 
 - 浏览器依赖
 ```
 ❯ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
 Google Chrome 99.0.4844.51 
 ```
+>[下载地址-github](https://github.com/mozilla/geckodriver/releases)<br/>
+>[下载地址-huaweicloud](https://mirrors.huaweicloud.com/geckodriver/)
 
-2. 火狐 
+1. 火狐 
 - 驱动依赖 
 ```
 ❯ geckodriver --version
